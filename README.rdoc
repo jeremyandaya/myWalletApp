@@ -1,0 +1,41 @@
+- [x] User
+    - [ ] phone number in correct format
+    - [ ] balance has to be above 0
+    - [ ] `resources :user`
+    	# Create
+    	# Read
+    	# Update
+    	# Delete
+
+    	# Rails action 		
+
+    	- index.html.erb	GET 	-------
+    	- show.html.erb		GET		Read
+    	
+    	- edit.html.erb 	
+    	- update.html.erb	PUT 	Update
+
+    	- new.html.erb		
+    	- create.html.erb	POST 
+- [x] Card
+    - [ ] length of number is 15 or 16
+- [x] UserCard
+    - [ ] share card with other users...
+        - [ ] from link
+        - [ ] let other users add card from a link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
