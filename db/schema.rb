@@ -30,6 +30,9 @@ ActiveRecord::Schema.define(version: 20151026190715) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "user_cards", ["card_id"], name: "index_user_cards_on_card_id"
+  add_index "user_cards", ["user_id"], name: "index_user_cards_on_user_id"
+
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "phone"

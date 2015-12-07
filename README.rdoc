@@ -1,28 +1,20 @@
-- [x] User
-    - [ ] phone number in correct format
-    - [ ] balance has to be above 0
-    - [ ] `resources :user`
-    	# Create
-    	# Read
-    	# Update
-    	# Delete
-
-    	# Rails action 		
-
-    	- index.html.erb	GET 	-------
-    	- show.html.erb		GET		Read
+- [ ] User
+    - [x] phone number in correct format
+    - [x] balance has to be above 0
+    - [x] `resources :users`
     	
-    	- edit.html.erb 	
-    	- update.html.erb	PUT 	Update
+- [ ] Card
+    - [ ] length of number is min: 15 and max: 16
+    
+- [ ] UserCard
+    - [x] create model
+    - [x] share card with other users...
+        - [x] from link
+        - [x] let other users add card from a link
+        - [ ] don't allow the user to add the same card multiple times
+    - [ ] remove card from a user's wallet
 
-    	- new.html.erb		
-    	- create.html.erb	POST 
-- [x] Card
-    - [ ] length of number is 15 or 16
-- [x] UserCard
-    - [ ] share card with other users...
-        - [ ] from link
-        - [ ] let other users add card from a link
+- [ ] Login/Logout
 
 
 

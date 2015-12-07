@@ -1,0 +1,8 @@
+<% @user_cards.each do |uc| %>
+	<%= link_to(uc.user.first_name, user_path(uc.user.id)) %> <%= link_to(uc.card.number, card_path(uc.user.id)) %>
+	<p>
+		<%= uc.user.first_name %> <%=uc.user.last_name %> can use <%= uc.card.card_type %> for online shopping!
+	</p>
+	<hr>
+
+<% end %>

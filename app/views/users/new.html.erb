@@ -1,16 +1,17 @@
+
 <%= form_for @user do |u| %>
 	<%= u.label :email %>
-	<%= u.text_field :email %>
+	<%= u.text_field :email %><br>
 	<%= u.label :phone %>
-	<%= u.text_field :phone %>
+	<%= u.text_field :phone %><br>
 	<%= u.label :first_name %>
-	<%= u.text_field :first_name %>
+	<%= u.text_field :first_name %><br>
 	<%= u.label :last_name %>
-	<%= u.text_field :last_name %>
+	<%= u.text_field :last_name %><br>
 	<%= u.label :balance %>
-	<%= u.text_field :balance %>
+	<%= u.text_field :balance %><br>
 	<%= u.label :password %>
-	<%= u.text_field :password %>
+	<%= u.text_field :password %><br>
 
 	<%= u.submit :create %>
 

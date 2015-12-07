@@ -1,0 +1,20 @@
+<h1>Cards</h1>
+<% @cards.each do |card| %>
+
+	<p>Card Number: <%= card.number %></p>
+	<p>Expiration Month: <%= card.expMonth %></p>
+	<p>Expiration Year: <%= card.expYear %></p>
+	<p>Card Type: <%= card.card_type %></p>
+
+	<%= link_to("Delete", card_path(card.id), method: :delete) %>
+	<%= link_to("Add to my wallet", user_cards_path(card_id: card.id, user_id: session[:user_id]), method: :post) %>
+
+	<%# link_to("Delete", card_path(@card.id), method: :delete) %>
+	<%# if @ownership.nil? %>
+		<%# link_to("Add to my wallet", user_cards_path(card_id: @card.id, user_id: 1), method: :post) %>
+	<%# else %>
+		<%# link_to("Remove from my wallet", user_card_path(card_id: @card.id, user_id: 1), method: :delete) %>
+	<%# end %>
+	<hr>
+
+<% end %>
